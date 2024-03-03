@@ -11,7 +11,7 @@
 <body>
     <main class="flex flex-row">
         <!-- left section -->
-        <section class="flex flex-col items-end gap-5 h-screen w-48 py-5 overflow-hidden overflow-y-auto pr-3">
+        <section class="flex flex-col items-end gap-5 h-screen w-52 py-5 overflow-hidden overflow-y-auto pr-3">
             <a href="" class="hover:bg-[#B9CAD2] p-2 rounded-full">
                 <img src="./images/twitter.png" alt="" class="h-7 w-7">
             </a>
@@ -47,11 +47,11 @@
         <section class="flex flex-col w-[650px] shadow shadow-b">
             <!-- top -->
             <div class="flex flex-row w-full h-14 shadow shadow-b">
-                <div class="w-80 h-16 flex fler justify-center items-center">
-                    <h2 class="hover:bg-[#B9CAD2] p-2 rounded border-[#1C9BF1] border-b-4 ">For You</h2>
+                <div class="hover:bg-[#B9CAD2] w-96 h-14 flex fler justify-center items-center">
+                    <h2 class="p-2 rounded border-[#1C9BF1] border-b-4 font-bold text-xl">For You</h2>
                 </div>
-                <div class="flex flex-row justify-between px-3 items-center w-full h-16">
-                    <h2 class="hover:bg-[#B9CAD2] p-2 rounded">Following</h2>
+                <div class="flex flex-row justify-between items-center px-3 w-full h-14">
+                    <h2 class="hover:bg-[#B9CAD2] w-48 h-14 p-4 rounded text-center">Following</h2>
                     <img src="./images/setting.png" alt="" class="h-10 hover:bg-[#B9CAD2] p-2 rounded-full">
                 </div>
             </div>
@@ -59,7 +59,8 @@
                 <a href="" class="hover:bg-[#B9CAD2] p-2 rounded-full">
                     <img src="./images/avarter.png" alt="" class="h-7 w-7 rounded-xl">
                 </a>
-                <p class="text-[#C2C9CE] font-semibold text-xl">What is happing</p>
+                <input type="text" placeholder="What is happing?!"
+                    class="text-[#C2C9CE] font-semibold text-xl outline-none">
             </div>
             <div class="flex flex-row justify-between h-20 p-4">
                 <div class="flex flex-row justify-center items-center gap-3 pl-16">
@@ -85,6 +86,31 @@
                 <button class="bg-black text-white font-bold w-28 py-3 px-5 rounded-full">
                     Subscribe
                 </button>
+            </div>
+            <!-- post -->
+            <div class="flex flex-row justify-between items-center gap-3 py-3 pl-2">
+                <div class="flex flex-row gap-4  items-center">
+                    <a href="" class="hover:bg-[#B9CAD2] p-2 rounded-full">
+                        <img src="./images/helal.png" alt="" class="h-10 w-10 rounded-full">
+                    </a>
+                    <h2 class="text-[#0F1419] font-semibold text-xl">Helal Khan</h2>
+                    <img src="./images/quality.png" alt="" class="w-8 h-8">
+                    <p class="text-[#536471] font-medium text-base">@helalkhan</p>
+                    <img src="./images/ban.png" alt="" class="w-10">
+                </div>
+                <div class="hover:bg-[#B9CAD2] rounded-full p-2">
+                    <img src="./images/3-dots.png" alt="" class="h-7 w-7">
+                </div>
+            </div>
+            <img src="./images/helal.png" alt="" class="p-3 rounded-md">
+        </section>
+        <section class="w-[440px] flex flex-col">
+            <div class="ml-10 S">
+                <div class="relative flex flex-row items-center gap-2 ">
+                    <img src="./images/search.png" alt="" class="absolute h-4 left-2 ml-3">
+                    <input type="text" name="id" placeholder="Search"
+                        class=" bg-[#EFF3F4] w-full  rounded-full outline-none py-2 px-3 pl-10 border hover:border-blue-400 m-2">
+                </div>
             </div>
         </section>
     </main>
