@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <main class="flex flex-row">
+    <main class="flex flex-row ">
         <!-- left section -->
-        <section class="flex flex-col items-end gap-5 h-screen w-52 py-5 overflow-hidden overflow-y-auto pr-3">
+        <section class="flex flex-col items-end gap-5 h-screen w-52 py-5 overflow-hidden fixed overflow-y-auto pr-3">
             <a href="" class="hover:bg-[#B9CAD2] p-2 rounded-full">
                 <img src="./images/twitter.png" alt="" class="h-7 w-7">
             </a>
@@ -44,7 +44,7 @@
             </a>
         </section>
         <!-- mid & right section -->
-        <section class="flex flex-row overflow-hidden overflow-y-auto">
+        <section class="flex flex-row pl-[208px] overflow-hidden overflow-y-auto">
             <!-- middle section -->
             <div class="flex flex-col w-[650px] shadow shadow-b">
                 <!-- top -->
@@ -94,7 +94,7 @@
                 <div class="flex flex-row justify-center items-center py-3 shadow hover:bg-[#F7F7F7]">
                     <h3 class="text-[#37A6F1] font-medium">Show 500 posts</h3>
                 </div>
-                <!-- post -->
+                <!-- 1st post -->
                 <div class="flex flex-row justify-between items-center gap-3 py-3 pl-2">
                     <div class="flex flex-row gap-4  items-center">
                         <a href="" class="hover:bg-[#B9CAD2] p-2 rounded-full">
@@ -115,6 +115,27 @@
                     </div>
                 </div>
                 <img src="./images/helal.png" alt="" class="p-3 rounded-md">
+                <!-- 2nd post -->
+                <div class="flex flex-row justify-between items-center gap-3 py-3 pl-2">
+                    <div class="flex flex-row gap-4  items-center">
+                        <a href="" class="hover:bg-[#B9CAD2] p-2 rounded-full">
+                            <img src="./images/avarter.png" alt="" class="h-10 w-10 rounded-full">
+                        </a>
+                        <h2 class="text-[#0F1419] font-semibold text-xl">Manirul Islam</h2>
+                        <img src="./images/quality.png" alt="" class="w-8 h-8">
+                        <p class="text-[#536471] font-medium text-base">@mmimonir499</p>
+                        <img src="./images/ban.png" alt="" class="w-10">
+                    </div>
+                    <div class="relative group">
+                        <div class="hover:bg-[#B9CAD2] rounded-full p-2">
+                            <img src="./images/3-dots.png" alt="" class="h-7 w-7 ">
+                        </div>
+                        <div class="bg-[#55585C] absolute hidden group-hover:block rounded-md px-1">
+                            <p class="text-white text-center">more</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/avarter.png" alt="" class="p-3 rounded-md">
             </div>
             <!-- right section -->
             <div class="w-[440px] flex flex-col pl-10">
@@ -140,17 +161,105 @@
                             Trends for you</h2>
                     </div>
                     <!-- trend 1 -->
-                    <div class="flex flex-row justify-between hover:bg-[#EFF1F1] rounded-lg">
+                    <div class="flex flex-row justify-between hover:bg-[#EFF1F1] rounded-lg py-2 cursor-pointer">
                         <div class="flex flex-col pl-1">
-                            <p class="text-[#657580]">Trending in Bangladesh</p>
-                            <h3 class="font-semibold text-xl">Bengali</h3>
-                            <p class="text-[#657580]">22K posts</p>
+                            <p class="text-[#657580] text-sm">Trending in Bangladesh</p>
+                            <h3 class="font-semibold text-lg">Bengali</h3>
+                            <p class="text-[#657580] text-sm">22K posts</p>
                         </div>
-                        <div class="hover:bg-[#22282b] rounded-full">
-                            <img src="./images/more5.png" alt="" class="h-5 w-5">
-                        </div>
+                        <button class="hover:bg-[#B9CAD2] rounded-full p-2 h-max">
+                            <img src="./images/more5.png" alt="" class="h-5">
+                        </button>
                     </div>
-                    <div class="flex flex-row py-3 rounded-b-xl hover:bg-[#EFF1F1]">
+                    <!-- trend 2 -->
+                    <div class="flex flex-row justify-between hover:bg-[#EFF1F1] rounded-lg py-2 cursor-pointer">
+                        <div class="flex flex-col pl-1">
+                            <p class="text-[#657580] text-sm">Trending in Bangladesh</p>
+                            <h3 class="font-semibold text-lg">#ShakibAlHasan</h3>
+                            <p class="text-[#657580] text-sm">22K posts</p>
+                        </div>
+                        <button class="hover:bg-[#B9CAD2] rounded-full p-2 h-max">
+                            <img src="./images/more5.png" alt="" class="h-5">
+                        </button>
+                    </div>
+                    <!-- trend 3 -->
+                    <div class="flex flex-row justify-between hover:bg-[#EFF1F1] rounded-lg py-2 cursor-pointer">
+                        <div class="flex flex-col pl-1">
+                            <p class="text-[#657580] text-sm">Trending in Bangladesh</p>
+                            <h3 class="font-semibold text-lg">#EmraanHashmi</h3>
+                            <p class="text-[#657580] text-sm">22K posts</p>
+                        </div>
+                        <button class="hover:bg-[#B9CAD2] rounded-full p-2 h-max">
+                            <img src="./images/more5.png" alt="" class="h-5">
+                        </button>
+                    </div>
+                    <!-- trend 4 -->
+                    <div class="flex flex-row justify-between hover:bg-[#EFF1F1] rounded-lg py-2 cursor-pointer">
+                        <div class="flex flex-col pl-1">
+                            <p class="text-[#657580] text-sm">Trending in Bangladesh</p>
+                            <h3 class="font-semibold text-lg">Rihanna</h3>
+                            <p class="text-[#657580] text-sm">22K posts</p>
+                        </div>
+                        <button class="hover:bg-[#B9CAD2] rounded-full p-2 h-max">
+                            <img src="./images/more5.png" alt="" class="h-5">
+                        </button>
+                    </div>
+                    <!-- trend 5 -->
+                    <div class="flex flex-row justify-between hover:bg-[#EFF1F1] rounded-lg py-2 cursor-pointer">
+                        <div class="flex flex-col pl-1">
+                            <p class="text-[#657580] text-sm">Trending in Bangladesh</p>
+                            <h3 class="font-semibold text-lg">#ShehnaazGill</h3>
+                            <p class="text-[#657580] text-sm">22K posts</p>
+                        </div>
+                        <button class="hover:bg-[#B9CAD2] rounded-full p-2 h-max">
+                            <img src="./images/more5.png" alt="" class="h-5">
+                        </button>
+                    </div>
+                    <!-- trend 6 -->
+                    <div class="flex flex-row justify-between hover:bg-[#EFF1F1] rounded-lg py-2 cursor-pointer">
+                        <div class="flex flex-col pl-1">
+                            <p class="text-[#657580] text-sm">Trending in Bangladesh</p>
+                            <h3 class="font-semibold text-lg">WhatsApp</h3>
+                            <p class="text-[#657580] text-sm">22K posts</p>
+                        </div>
+                        <button class="hover:bg-[#B9CAD2] rounded-full p-2 h-max">
+                            <img src="./images/more5.png" alt="" class="h-5">
+                        </button>
+                    </div>
+                    <!-- trend 7 -->
+                    <div class="flex flex-row justify-between hover:bg-[#EFF1F1] rounded-lg py-2 cursor-pointer">
+                        <div class="flex flex-col pl-1">
+                            <p class="text-[#657580] text-sm">Trending in Bangladesh</p>
+                            <h3 class="font-semibold text-lg">#buying_contents</h3>
+                            <p class="text-[#657580] text-sm">22K posts</p>
+                        </div>
+                        <button class="hover:bg-[#B9CAD2] rounded-full p-2 h-max">
+                            <img src="./images/more5.png" alt="" class="h-5">
+                        </button>
+                    </div>
+                    <!-- trend 8 -->
+                    <div class="flex flex-row justify-between hover:bg-[#EFF1F1] rounded-lg py-2 cursor-pointer">
+                        <div class="flex flex-col pl-1">
+                            <p class="text-[#657580] text-sm">Trending in Bangladesh</p>
+                            <h3 class="font-semibold text-lg">#buying_contents</h3>
+                            <p class="text-[#657580] text-sm">22K posts</p>
+                        </div>
+                        <button class="hover:bg-[#B9CAD2] rounded-full p-2 h-max">
+                            <img src="./images/more5.png" alt="" class="h-5">
+                        </button>
+                    </div>
+                    <!-- trend 9 -->
+                    <div class="flex flex-row justify-between hover:bg-[#EFF1F1] rounded-lg py-2 cursor-pointer">
+                        <div class="flex flex-col pl-1">
+                            <p class="text-[#657580] text-sm">Trending in Bangladesh</p>
+                            <h3 class="font-semibold text-lg">#ShehnaazGill</h3>
+                            <p class="text-[#657580] text-sm">22K posts</p>
+                        </div>
+                        <button class="hover:bg-[#B9CAD2] rounded-full p-2 h-max">
+                            <img src="./images/more5.png" alt="" class="h-5">
+                        </button>
+                    </div>
+                    <div class="flex flex-row py-3 px-2 rounded-b-xl hover:bg-[#EFF1F1] cursor-pointer">
                         <h3 class="text-[#37A6F1] font-medium">See more</h3>
                     </div>
                 </div>
@@ -196,7 +305,7 @@
                             </button>
                         </div>
                     </div>
-                    <!-- 3rd  -->
+                    <!-- 3rd follow -->
                     <div class="flex flex-row gap-2 justify-between items-center hover:bg-[#EFF1F1]">
                         <div class="">
                             <img src="./images/thamima tisha.png" alt=""
@@ -221,7 +330,8 @@
                         <h3 class="text-[#37A6F1] font-medium ml-2">See more</h3>
                     </div>
                 </div>
-                <div class="flex flex-wrap flex-row gap-2 mt-3">
+                <!-- address -->
+                <div class="flex flex-wrap flex-row gap-2 mt-3 pb-3">
                     <p class="text-[#536471] font-normal text-sm">Terms of Service</p>
                     <p class="text-[#536471] font-normal text-sm">Privacy Policy</p>
                     <p class="text-[#536471] font-normal text-sm">Cookie Policy</p>
